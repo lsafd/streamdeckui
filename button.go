@@ -78,7 +78,7 @@ func (r *buttonRenderer) Layout(s fyne.Size) {
 }
 
 func (r *buttonRenderer) MinSize() fyne.Size {
-	iconSize := fyne.NewSize(r.b.editor.iconSize, r.b.editor.iconSize)
+	iconSize := fyne.NewSize(float32(r.b.editor.iconSize), float32(r.b.editor.iconSize))
 	return iconSize.Add(fyne.NewSize(buttonInset*2, buttonInset*2))
 }
 
