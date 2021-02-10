@@ -31,7 +31,7 @@ func (b *button) CreateRenderer() fyne.WidgetRenderer {
 
 	border := canvas.NewRectangle(color.Transparent)
 	border.StrokeWidth = 2
-	border.SetMinSize(fyne.NewSize(b.editor.iconSize, b.editor.iconSize))
+	border.SetMinSize(fyne.NewSize(float32(b.editor.iconSize), float32(b.editor.iconSize)))
 
 	bg := canvas.NewRectangle(color.Black)
 	render := &buttonRenderer{border: border, text: text, icon: icon, bg: bg,
